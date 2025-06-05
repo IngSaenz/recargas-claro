@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="logo-removebg-preview.png" width="105" height="500" alt="¡Claro Nicaragua!" class="logo" />
+    <img src="logo-removebg-preview.png" alt="¡Claro Nicaragua!" class="logo" />
     <nav>
       <ul>
         <li><a href="#" data-section="inicio">Inicio</a></li>
@@ -25,36 +25,13 @@
     <section id="inicio" class="seccion-activa galeria">
       <h2>Promociones Claro</h2>
       <div class="collage">
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/jEhU5ofUhJw" 
-            title="Claro TV HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Claro TV HD</p>
-        </div>
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/UyMP71Kz-e8" 
-            title="Recarga fácil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Recarga fácil</p>
-        </div>
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/PqPIp5X-BNs" 
-            title="Bonos exclusivos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Bonos exclusivos</p>
-        </div>
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/bAc28YEKFPU" 
-            title="Planes prepago" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Planes prepago</p>
-        </div>
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/CAaedJUQXNg" 
-            title="Internet veloz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Internet veloz</p>
-        </div>
-        <div>
-          <iframe width="280" height="158" src="https://www.youtube.com/embed/LYHzsO1w4s8" 
-            title="Claro Hogar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Claro Hogar</p>
-        </div>
+        <!-- Videos embebidos -->
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/jEhU5ofUhJw"></iframe><p>Claro TV HD</p></div>
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/UyMP71Kz-e8"></iframe><p>Recarga fácil</p></div>
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/PqPIp5X-BNs"></iframe><p>Bonos exclusivos</p></div>
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/bAc28YEKFPU"></iframe><p>Planes prepago</p></div>
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/CAaedJUQXNg"></iframe><p>Internet veloz</p></div>
+        <div><iframe width="280" height="158" src="https://www.youtube.com/embed/LYHzsO1w4s8"></iframe><p>Claro Hogar</p></div>
       </div>
     </section>
 
@@ -96,7 +73,7 @@
         <input type="number" id="montoPrestamo" name="montoPrestamo" min="10" max="200" required />
         <button type="submit">Préstamo de saldo</button>
       </form>
-      <p id="mensaje-presta" style="color: green; margin-top: 10px;"></p>
+      <p id="mensaje-presta"></p>
     </section>
 
     <section id="transf">
@@ -110,7 +87,7 @@
         <input type="number" id="montoTransferencia" name="montoTransferencia" min="10" max="1000" required />
         <button type="submit">Transferir</button>
       </form>
-      <p id="mensaje-transf" style="color: green; margin-top: 10px;"></p>
+      <p id="mensaje-transf"></p>
     </section>
 
     <section id="hogar">
@@ -121,7 +98,7 @@
   </main>
 
   <footer>
-    <p>¡Siempre con las mejores soluciones! Conéctate y viaja a todo el mundo. <strong>¡Claro, claro que si! Condiciones aplican.</strong></p>
+    <p>¡Siempre con las mejores soluciones! Conéctate y viaja a todo el mundo. <strong>¡Claro, claro que sí! Condiciones aplican.</strong></p>
   </footer>
 
   <script src="script.js"></script>
