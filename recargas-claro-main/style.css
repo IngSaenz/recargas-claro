@@ -1,0 +1,236 @@
+/* Estilos base */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('images/claro-nic.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo {
+  max-height: 120px;     /* Aumenta el alto máximo del logo */
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;        /* ✅ Centrado horizontal */
+}
+
+  
+
+
+/* Menú centrado */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 15px; /* Cambia este valor según el tamaño que desees */
+  color: #ec0808;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #d00000;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 95%;
+}
+
+form label,
+form input,
+form select,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #d00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#mensaje-recarga,
+#mensaje-presta,
+#mensaje-transf {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+main {
+  flex: 1;
+}
+
+.galeria .collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.galeria .collage > div {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.galeria .collage > div:hover {
+  transform: scale(1.05);
+}
+
+.galeria .collage iframe {
+  width: 100%;
+  height: 158px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: none;
+  background-color: #000;
+}
+
+.galeria .collage > div p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #d00000;
+}
+
+main section {
+  display: none;
+}
+
+.seccion-activa {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+  }
+
+  form input,
+  form select,
+  form textarea,
+  form button {
+    font-size: 15px;
+  }
+
+  .galeria .collage {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+#hogar img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .galeria .collage iframe {
+    height: 180px;
+  }
+}
