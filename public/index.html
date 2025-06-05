@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="¡Claro Nicaragua!" class="logo" />
+    <img src="logo-removebg-preview.png" width="105" height="500" alt="¡Claro Nicaragua!" class="logo" />
     <nav>
       <ul>
         <li><a href="#" data-section="inicio">Inicio</a></li>
@@ -19,21 +19,42 @@
         <li><a href="#" data-section="hogar">Claro Hogar</a></li>
       </ul>
     </nav>
-   
   </header>
+
   <main class="container">
     <section id="inicio" class="seccion-activa galeria">
       <h2>Promociones Claro</h2>
       <div class="collage">
-        <div><img src="images/claro-nic.jpg" alt="Recarga y gana GB" /><p>Recarga y gana GB</p></div>
-        <div><img src="promo2.jpg" alt="Planes ilimitados" /><p>Planes ilimitados</p></div>
-        <div><img src="promo3.jpg" alt="Compra tu SIM" /><p>Compra tu SIM</p></div>
-        <div><img src="promo4.jpg" alt="Claro TV HD" /><p>Claro TV HD</p></div>
-        <div><img src="promo5.jpg" alt="Recarga fácil" /><p>Recarga fácil</p></div>
-        <div><img src="promo6.jpg" alt="Bonos exclusivos" /><p>Bonos exclusivos</p></div>
-        <div><img src="promo7.jpg" alt="Planes prepago" /><p>Planes prepago</p></div>
-        <div><img src="promo8.jpg" alt="Internet veloz" /><p>Internet veloz</p></div>
-        <div><img src="promo9.jpg" alt="Claro Hogar" /><p>Claro Hogar</p></div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/jEhU5ofUhJw" 
+            title="Claro TV HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Claro TV HD</p>
+        </div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/UyMP71Kz-e8" 
+            title="Recarga fácil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Recarga fácil</p>
+        </div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/PqPIp5X-BNs" 
+            title="Bonos exclusivos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Bonos exclusivos</p>
+        </div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/bAc28YEKFPU" 
+            title="Planes prepago" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Planes prepago</p>
+        </div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/CAaedJUQXNg" 
+            title="Internet veloz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Internet veloz</p>
+        </div>
+        <div>
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/LYHzsO1w4s8" 
+            title="Claro Hogar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Claro Hogar</p>
+        </div>
       </div>
     </section>
 
@@ -67,35 +88,35 @@
     </section>
 
     <section id="presta">
-        <h2>Presta Saldo</h2>
-        <form>
-          <label for="celular">Número de Teléfono:</label>
-          <input type="tel" id="celular" name="celular" pattern="\d{8}" required />
-          <label for="montoPrestamo">Monto a Prestar:</label>
-          <input type="number" id="montoPrestamo" name="montoPrestamo" min="10" max="200" required />
-          <button type="submit">Préstamo de saldo</button>
-        </form>
-        <p id="mensaje-presta" style="color: green; margin-top: 10px;"></p>
-      </section>
-      
-      <section id="transf">
-        <h2>Transfiere Saldo</h2>
-        <form>
-          <label for="origen">Número que Transfiere:</label>
-          <input type="tel" id="origen" name="origen" pattern="\d{8}" required />
-          <label for="destino">Número que Recibe:</label>
-          <input type="tel" id="destino" name="destino" pattern="\d{8}" required />
-          <label for="montoTransferencia">Monto:</label>
-          <input type="number" id="montoTransferencia" name="montoTransferencia" min="10" max="1000" required />
-          <button type="submit">Transferir</button>
-        </form>
-        <p id="mensaje-transf" style="color: green; margin-top: 10px;"></p>
-      </section>
-      
+      <h2>Presta Saldo</h2>
+      <form>
+        <label for="celular">Número de Teléfono:</label>
+        <input type="tel" id="celular" name="celular" pattern="\d{8}" required />
+        <label for="montoPrestamo">Monto a Prestar:</label>
+        <input type="number" id="montoPrestamo" name="montoPrestamo" min="10" max="200" required />
+        <button type="submit">Préstamo de saldo</button>
+      </form>
+      <p id="mensaje-presta" style="color: green; margin-top: 10px;"></p>
+    </section>
+
+    <section id="transf">
+      <h2>Transfiere Saldo</h2>
+      <form>
+        <label for="origen">Número que Transfiere:</label>
+        <input type="tel" id="origen" name="origen" pattern="\d{8}" required />
+        <label for="destino">Número que Recibe:</label>
+        <input type="tel" id="destino" name="destino" pattern="\d{8}" required />
+        <label for="montoTransferencia">Monto:</label>
+        <input type="number" id="montoTransferencia" name="montoTransferencia" min="10" max="1000" required />
+        <button type="submit">Transferir</button>
+      </form>
+      <p id="mensaje-transf" style="color: green; margin-top: 10px;"></p>
+    </section>
 
     <section id="hogar">
       <h2>Claro Hogar</h2>
       <p>Solicita nuestro servicio de Claro Hogar con TV HD y conexión a internet de alta velocidad al mejor precio. ¡Llama ya y descubre los paquetes promocionales!</p>
+      <img src="imagen.png" width="800" height="580" alt="" />
     </section>
   </main>
 
