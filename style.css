@@ -41,7 +41,7 @@ header {
 }
 
   
-}
+
 
 /* Menú centrado */
 nav {
@@ -62,7 +62,7 @@ nav ul {
 nav a {
   text-decoration: none;
   font-size: 15px; /* Cambia este valor según el tamaño que desees */
-  color: #f3ebeb;
+  color: #050505;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 6px;
